@@ -4,6 +4,12 @@
 
 {% block cuerpo %}
 <div>PROFILE</div>
+
+<ul>
+    {% for profesor in profesores %}
+        <li>{{profesor.nombre}}, {{profesor.apellido}}, {{profesor.email}}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}
 
 
