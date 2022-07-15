@@ -1,4 +1,35 @@
-<!DOCTYPE html>
+{% extends "mi_app/padre.html" %}
+
+
+{% block cuerpo %}
+<div>Cursos</div>
+
+<ul>
+    <ul>
+        {% for curso in cursos %}
+            <li> {{curso.nombre}}, {{curso.camada}} </li>
+        {% endfor %}
+        </ul>
+</ul>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,4 +48,4 @@
 
 
 </body>
-</html>
+</html> -->

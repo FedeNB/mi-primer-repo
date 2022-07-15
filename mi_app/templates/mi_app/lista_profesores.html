@@ -2,27 +2,14 @@
 
 
 {% block cuerpo %}
-<div>Estudiantes</div>
+<div>Profesores</div>
 
 <ul>
-    {% for estudiante in estudiantes %}
-        <li>{{estudiante.nombre}}, {{estudiante.apellido}}, {{estudiante.email}}</li>
+    {% for profesor in profesores %}
+    <li>{{profesor.nombre}}, {{profesor.apellido}}, {{profesor.email}}</li>
     {% endfor %}
-    </ul>
+</ul>
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- <!DOCTYPE html>
@@ -36,8 +23,9 @@
 <body>
 
     <ul>
-    {% for estudiante in estudiantes %}
-        <li>{{estudiante.nombre}}, {{estudiante.apellido}}, {{estudiante.email}}</li>
+    {% for profesor in profesores %}
+        <li>{{profesor.nombre}}, {{profesor.apellido}}, {{profesor.email}}</li>
+
     {% endfor %}
     </ul>
 
